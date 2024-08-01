@@ -156,7 +156,7 @@ int main(int argc, char **argv)
     if (listen(serv_sd, 5) == -1)
         error_handling("listen() error");
 
-    // 클라이언트 연결 수락 및 처리
+    // client 연결 수락 및 처리
     while (1)
     {
         clnt_sd = accept(serv_sd, (struct sockaddr *)&serv_adr, (socklen_t *)&addrlen);
